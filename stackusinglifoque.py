@@ -1,0 +1,11 @@
+from queue import LifoQueue
+stack = LifoQueue(maxsize=4)
+stack.put('a')
+stack.put('b')
+stack.put('c')
+print("Full", stack.full())
+print("Size", stack.qsize())
+print(stack.get())
+print(stack.get())
+print(stack.get())
+print("Empty ",stack.empty())
